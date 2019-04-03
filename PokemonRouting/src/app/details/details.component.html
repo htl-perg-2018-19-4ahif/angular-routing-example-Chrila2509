@@ -1,1 +1,13 @@
 <h1>Pokémon Details</h1>
+
+<h2>{{pokemon.name}}</h2>
+<h3>PokeDex Nr: {{pokemon.id}}</h3>
+<div>Abilities: </div>
+<ul>
+    <li *ngFor='let ability of pokemon.abilities'>
+        {{ability.ability.name}}
+    </li>
+</ul>
+
+
+<a routerLink ='/pokemon'>PokeDex</a>
